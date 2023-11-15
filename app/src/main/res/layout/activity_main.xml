@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icono_login"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintStart_toStartOf="@id/v1"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,53 +30,75 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Entrar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="150dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="635dp" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Introduce texto"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="328dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
+
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             tools:ignore="MissingConstraints">
+
             <ImageView
-                android:src=""
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:scaleType="center"
                 android:background="@color/md_theme_light_primary"
-                android:contentDescription="@string/app_name" />
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:src="@drawable/icono_login" />
+
             <EditText
                 android:id="@+id/username"
-                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:hint="Nombre" />
+                android:hint="Nombre"
+                android:inputType="textEmailAddress" />
+
             <EditText
                 android:id="@+id/password"
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="16dp"
                 android:fontFamily="sans-serif"
-                android:hint="Contraseña"/>
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
         </LinearLayout>
+
     </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
