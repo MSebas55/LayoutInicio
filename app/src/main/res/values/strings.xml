@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">LayoutInicio</string>
+    <string name="app_name">SpotSpain</string>
+    <string name="watermark">SpotSpain by Sebastian Calimandruc</string>
 </resources>
