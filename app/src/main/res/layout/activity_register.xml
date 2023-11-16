@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Registro:"
-        android:textColor="@color/md_theme_dark_outline"
+        android:textColor="@color/md_theme_dark_shadow"
         android:textSize="70px"
         app:layout_constraintStart_toStartOf="@id/v1"
         app:layout_constraintTop_toTopOf="@id/h2" />
@@ -74,7 +74,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@color/md_theme_dark_primary"
         app:layout_constraintBottom_toTopOf="@id/mailInputLogin"
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"
@@ -85,7 +84,6 @@
             android:id="@+id/usuarioreg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/md_theme_dark_primary"
             android:hint="Usuario"
             android:inputType="textPersonName"
             android:textColorHint="@color/md_theme_dark_outline" />
@@ -97,7 +95,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@color/md_theme_dark_primary"
         app:layout_constraintBottom_toTopOf="@id/h1"
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"
@@ -108,7 +105,6 @@
             android:id="@+id/mailreg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/md_theme_dark_primary"
             android:hint="Correo"
             android:inputType="textPersonName"
             android:textColorHint="@color/md_theme_dark_outline" />
@@ -120,7 +116,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@color/md_theme_dark_primary"
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"
         app:layout_constraintTop_toBottomOf="@id/h1"
@@ -131,7 +126,6 @@
             android:id="@+id/passreg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/md_theme_dark_primary"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:textColorHint="@color/md_theme_dark_outline" />
@@ -149,23 +143,12 @@
         app:layout_constraintStart_toStartOf="@id/v1"
         app:layout_constraintTop_toTopOf="@+id/h4" />
 
-    <Button
-        android:id="@+id/botonregsindatos"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="openMain"
-        android:text="Registrarse sin datos"
-        app:layout_constraintBottom_toTopOf="@+id/h3"
-        app:layout_constraintEnd_toEndOf="@id/v2"
-        app:layout_constraintStart_toStartOf="@id/v1"
-        app:layout_constraintTop_toTopOf="@+id/h5" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.20"
+        app:layout_constraintGuide_percent="0.10"
         />
 
     <androidx.constraintlayout.widget.Guideline
@@ -173,7 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.80"
+        app:layout_constraintGuide_percent="0.90"
         />
 
 

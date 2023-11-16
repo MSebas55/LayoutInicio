@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.MSebas55.layoutinicio.Login;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.request.transition.Transition;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -27,15 +30,15 @@ public class SplashScreen extends AppCompatActivity {
         Animation fadeAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
         appNameSplash.startAnimation(fadeAnimation);
 
-        Animation shakeAnimation = AnimationUtils.loadAnimation(this, R.anim.sequential);
-        logoSplash.startAnimation(shakeAnimation);
+        Animation sequentialAnimation = AnimationUtils.loadAnimation(this, R.anim.sequential);
+        logoSplash.startAnimation(sequentialAnimation);
     }
 
     public void openLogin(){
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, Register.class);
+                Intent intent = new Intent(SplashScreen.this, Login.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);

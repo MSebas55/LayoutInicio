@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
     public TextView forgotPassword;
@@ -39,5 +40,9 @@ public class Login extends AppCompatActivity {
     public void openRegister(View view) {
         Intent nIntent = new Intent(Login.this, Register.class);
         startActivity(nIntent);
+    }
+    public void openPrincipal(View view) {
+        Toast toast = Toast.makeText(Login.this, "Entrar a Principal", Toast.LENGTH_LONG);
+        toast.show();
     }
 }

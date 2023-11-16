@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -27,10 +28,6 @@ public class Register extends AppCompatActivity {
         Animation zoomAnimation = AnimationUtils.loadAnimation(this, R.anim.zoom);
         icono.startAnimation(zoomAnimation);
 
-    }
-    public void openMain(View view) {
-        Intent nIntent = new Intent(Register.this, Login.class);
-        startActivity(nIntent);
     }
     public void insertValues(View v) {
 
@@ -65,6 +62,8 @@ public class Register extends AppCompatActivity {
                 Toast.makeText(this, "Fallo al insertar", Toast.LENGTH_LONG).show();
             }
             db.close();
+        } else {
+            Toast.makeText(this, "Rellene los campos", Toast.LENGTH_LONG).show();
         }
     }
 }
