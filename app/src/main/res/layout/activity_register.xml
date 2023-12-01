@@ -45,7 +45,7 @@
         android:id="@+id/iconoreg"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:src="@drawable/icono_login"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/h2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +78,8 @@
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"
         app:layout_constraintTop_toBottomOf="@id/registro"
-        app:startIconDrawable="@drawable/ic_persona">
+        app:startIconDrawable="@drawable/ic_persona"
+        android:background="#bfb9ff">
 
         <EditText
             android:id="@+id/usuarioreg"
@@ -99,7 +100,8 @@
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"
         app:layout_constraintTop_toBottomOf="@id/usernameInputLogin"
-        app:startIconDrawable="@drawable/ic_correo">
+        app:startIconDrawable="@drawable/ic_correo"
+        android:background="#bfb9ff">
 
         <EditText
             android:id="@+id/mailreg"
@@ -120,7 +122,8 @@
         app:layout_constraintStart_toStartOf="@id/v1"
         app:layout_constraintTop_toBottomOf="@id/h1"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/ic_llave">
+        app:startIconDrawable="@drawable/ic_llave"
+        android:background="#bfb9ff">
 
         <EditText
             android:id="@+id/passreg"
